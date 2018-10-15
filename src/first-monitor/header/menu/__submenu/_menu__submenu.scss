@@ -1,0 +1,35 @@
+.menu-i__submenu{
+	display: flex;
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	background-color: #fff;
+	padding: 20px 0;
+	border-top: 1px solid $red;
+	margin-top: 50px;
+	transition: all .3s;
+	&-ul{
+		padding: 0 30px;
+	}
+	&-li{
+		padding: 10px 0;
+	}
+	&-title{
+		color: $red;
+		font:{
+			size: $primary-fz;
+			family: $bold;
+		}
+	}
+	&-link{
+		color: $gray;
+		font:{
+			size: $primary-fz;
+			family: $semi-Bold;
+		}
+		transition: all .3s;
+		&:hover{
+			color: $red;
+		}
+	}
+}

@@ -1,0 +1,17 @@
+.header-i{
+	position: relative;
+	z-index: 2;	
+	&__container{
+		display: flex;
+		align-items: center;		
+	}
+}
+
+@media (max-width: 991px){
+	.header-i{
+		padding-top: 20px;
+		&+hr{
+			display: none;
+		}		
+	}
+}
