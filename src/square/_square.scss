@@ -1,0 +1,24 @@
+.square-i{
+	display: none;
+}
+
+@media (min-width: 992px){
+	.square-i{
+		display: block;
+		position: absolute;
+		border: 10px solid $green;
+		height: 300px;
+		width: 250px;
+		margin-top: -40px;
+    	margin-left: -20px;
+	}
+}
+
+@media (min-width: 1200px){
+	.square-i{
+		border-width: 20px;
+		height: 400px;
+		width: 350px;
+		margin-left: -34px;
+	}
+}

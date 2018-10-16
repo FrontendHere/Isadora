@@ -1,3 +1,4 @@
+//= jquery-3.3.1.min.js
 ;$(document).ready(function() {	
-	//= jquery-3.3.1.min.js
+	//= first-monitor/header/menu/menu.js
 });

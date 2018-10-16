@@ -1,42 +1,56 @@
 .menu-i{
-	width: 770px;
-	margin-left: auto;
-	&__ul{		
-		display: flex;
-		justify-content: flex-end;
-	}	
+	width: 80%;
+	position: fixed;
+	z-index: 10;
+	left: -100%;
+	top: 0;
+	height: 100vh;
+	transition: all .3s;
+	background-color: #fff;
+	padding:{
+	left: 15px;
+	right: 15px;
+	   }
+	&__ul{
+		display: block;
+		background-color: #fff;
+	}
 	&__link{
-		color: #fff;
+		padding:{
+			bottom: 15px;
+			top: 15px;
+		}
+		color: $green;
 		text-transform: uppercase;
 		font:{
 			size: $fz-14;
 			family: $regular;
 		}
 		display: block;
-		padding: 50px 30px;
-		transition: all .3s;
-		&:hover{
-			background-color: $green;
-		}		
+		transition: all .3s;	
 	}
 }
 .open-menu-i,
 .close-menu-i{
-	display: none;
+	display: block;
 	border: none;
-    background: #fff;
-    width: 40px;
-    height: 40px;
-    font-size: 25px;
+	background: #fff;
+	width: 40px;
+	height: 40px;
+	font-size: 25px;
+}
+.open-menu-i{
+	background: none;
 }
 .open-menu-i i{
 	font-size: 25px;
+	color: #fff;
 }
 .close-menu-i{
 	top: 0;
-    left: 100%;
-    position: absolute;
-    padding: 5px;
+	left: 100%;
+	position: absolute;
+	padding: 5px;
 }
 .overlay{
 	display: none;
@@ -49,33 +63,33 @@
 	background-color: #000;
 	opacity: .7;
 }
-@media (max-width: 991px){
+
+@media (min-width: 992px){
 	.menu-i{
-		width: 80%;
-		position: fixed;
-		z-index: 10;
-	    left: -100%;
-	    top: 0;
-	    height: 100vh;
-	    transition: all .3s;
-	    background-color: #fff;
-	    padding:{
-	    	left: 15px;
-	    	right: 15px;
-	    }
-		&__ul{
-			display: block;
-			background-color: #fff;
-		}
+		position: relative;
+		width: 770px;
+		margin-left: auto;
+		height: auto;
+		left: 0;
+		background-color: transparent;
+		&__ul{		
+			display: flex;
+			justify-content: flex-end;
+			background-color: transparent;
+		}	
 		&__link{
-			padding:{
-				bottom: 15px;
-				top: 15px;
-			}
+			color: #fff;			
+			padding: 50px 30px;			
+			&:hover{
+				background-color: $green;
+			}		
 		}
 	}
 	.open-menu-i,
 	.close-menu-i{
-		display: block;
+		display: none;
 	}
+	.open-menu-i{
+		background: none;
+	}	
 }

@@ -10,6 +10,7 @@ var gulp = require('gulp'),
     fileinclude = require('gulp-file-include'),
     //jade = require('gulp-jade'),
     cssmin = require('gulp-clean-css'),
+    gcmq = require('gulp-group-css-media-queries'), //Для группировки @media
     //imagemin = require('gulp-imagemin'),
     //pngquant = require('imagemin-pngquant'),
     rimraf = require('rimraf'),
@@ -73,6 +74,7 @@ gulp.task('css:build', function () {
         .pipe(sourcemaps.init()) //То же самое что и с js
         .pipe(sass()) //Скомпилируем
         .pipe(prefixer()) //Добавим вендорные префиксы
+        .pipe(gcmq()) //Группировать @media
         .pipe(cssmin()) //Сожмем
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(path.build.css)) //И в build
