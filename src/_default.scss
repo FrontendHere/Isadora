@@ -7,6 +7,7 @@ $fz-14: 1.4rem;
 //Color
 $red: #ff5722;
 $green: rgba(0,224,109,.8); //#00e06d;
+$blue: #300753;
 html{
 	font-size: 10px;
 	font-family: $regular;
@@ -28,16 +29,18 @@ h1{
 		family: $arvo-Bold;
 		size: 3rem;
 	}
-	line-height: 5.1rem;
+	line-height: 4.1rem;
 	color: #fff;
 	text-align: center;	
 }
 h2{
-		
+	text-transform: uppercase;
+	color: $green;
+	font-size: 1.6rem;
 }
 
 h3{
-
+	color: $blue;
 }
 @media (min-width: 321px){
 	
@@ -55,6 +58,7 @@ h3{
 	h1{
 		max-width: 510px;
 		font-size: 5rem;
+		line-height: 5.1rem;
 	}
 }
 @media (min-width: 992px){
@@ -68,6 +72,13 @@ h3{
 	h1{
 		font-size: 8rem;
 		line-height: 9.1rem;
+	}
+	h3{
+		font-size: 6rem;
+		line-height: 7.1rem;
+		font-family: $arvo-Bold;
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 }
 @media (max-width: 1199px){

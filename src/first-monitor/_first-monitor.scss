@@ -16,6 +16,8 @@
 }
 @media (min-width: 768px){
 	.first-monitor-i{
+		background: url(../img/bg-first-monitor.jpg) no-repeat;
+		background-position: center center;		
 		&__inner{
 			padding:{
 				top: 120px;
@@ -28,9 +30,7 @@
 	}
 }
 @media (min-width: 992px){
-	.first-monitor-i{
-		background: url(../img/bg-first-monitor.jpg) no-repeat;
-		background-position: center center;
+	.first-monitor-i{		
 		&__desc{
     		max-width: 50%;
     		text-align: left;
