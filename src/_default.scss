@@ -78,6 +78,10 @@ h3{
 		font-size: 5rem;
 		line-height: 5.1rem;
 	}
+	h3{
+		font-size: 4rem;
+		line-height: 1.2;
+	}
 }
 @media (min-width: 992px){
 	.container{
@@ -87,6 +91,10 @@ h3{
 		line-height: 6.1rem;
     	text-align: left;
     	margin: 0;
+	}
+	h3{
+		font-size: 4.5rem;
+		line-height: 1.2;
 	}
 }
 @media (min-width: 1200px){
@@ -103,7 +111,53 @@ h3{
 		font-family: $arvo-Bold;
 		padding-top: 20px;
 		padding-bottom: 20px;
+		text-align: left;
 	}
 }
 
 //Styles for repeating elements on page
+.section-main-i{
+	background: url(../img/bg-section-tablet.jpg) no-repeat;
+	background-position-y: center;
+	padding: 60px 0;
+	&__col-left-p{
+		color: rgba(85,85,85,0.83);
+		background-color: #fff;
+		font-size: 1.5rem;
+		text-align: center;
+		padding: 20px;
+	}
+}
+@media (min-width: 768px){
+	.section-main-i{
+		&__col-left-p{
+			font-size: 1.9rem;
+			line-height: 2.1rem;
+			padding: 30px;
+		}
+	}
+}
+@media (min-width: 1200px){
+	.section-main-i{
+		background: url(../img/bg-section.jpg) no-repeat;
+		background-position-y: center;
+		padding:{
+			top: 120px;
+			bottom: 120px;
+		}
+		&__col-left{
+			float: left;
+			width: 36%;
+		}		
+		&__col-left-p{
+			line-height: 3rem;
+			padding: 60px;
+			margin-left: -60px;
+			text-align: left;
+		}
+		&__col-right{
+			float: left;
+			width: 64%;
+		}		
+	}
+}
