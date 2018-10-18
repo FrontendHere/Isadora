@@ -6,7 +6,7 @@
 			top: 80px;
 			bottom: 80px;
 		}
-	}
+	}	
 	&__desc{
 		font-size: 1.5rem;
 		color: #fff;
@@ -30,8 +30,17 @@
 	}
 }
 @media (min-width: 992px){
-	.first-monitor-i{		
+	%first-h1-desc{
+		opacity: .9;
+		position: relative;
+		z-index: 1;
+	}
+	.first-monitor-i{
+		&__h1{
+			@extend %first-h1-desc;
+		}	
 		&__desc{
+			@extend %first-h1-desc;
     		max-width: 50%;
     		text-align: left;
 		}

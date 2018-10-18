@@ -95,6 +95,7 @@ h3{
 	h3{
 		font-size: 4.5rem;
 		line-height: 1.2;
+		text-align: left;
 	}
 }
 @media (min-width: 1200px){
@@ -108,17 +109,16 @@ h3{
 	h3{
 		font-size: 6rem;
 		line-height: 7.1rem;
-		font-family: $arvo-Bold;
 		padding-top: 20px;
-		padding-bottom: 20px;
-		text-align: left;
+		padding-bottom: 20px;		
 	}
 }
 
 //Styles for repeating elements on page
 .section-main-i{
 	background: url(../img/bg-section-tablet.jpg) no-repeat;
-	background-position-y: center;
+	background-position: center;
+    background-size: cover;
 	padding: 60px 0;
 	&__col-left-p{
 		color: rgba(85,85,85,0.83);
@@ -137,7 +137,7 @@ h3{
 		}
 	}
 }
-@media (min-width: 1200px){
+@media (min-width: 992px){
 	.section-main-i{
 		background: url(../img/bg-section.jpg) no-repeat;
 		background-position-y: center;
@@ -160,4 +160,18 @@ h3{
 			width: 64%;
 		}		
 	}
+}
+@media (min-width: 1200px){
+	
+}
+
+//Extends
+%flex-center{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+%flex-column{
+	display: flex;
+    flex-direction: column;
 }

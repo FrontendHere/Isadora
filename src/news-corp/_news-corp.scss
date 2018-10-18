@@ -1,3 +1,31 @@
-.news-corp-i{
+.news-corp-i{	
+	&__mobile{
+		@extend %flex-center;
+		margin: 0 auto;
+		background: url(../img/mobile-300.png) no-repeat;
+		width: 300px;
+		height: 605px;
+	}
+}
+@media (min-width: 768px){
+	.news-corp-i{
+		&__mobile{
+			background: url(../img/mobile.png) no-repeat;
+			width: 389px;
+			height: 784px;
+		}
+	}
+}
 
+@media (min-width: 992px){
+	.news-corp-i{
+		&__container{
+			display: flex;
+		}
+		&__col-left{
+			display: flex;
+    		flex-direction: column;
+			justify-content: center;
+		}
+	}
 }
