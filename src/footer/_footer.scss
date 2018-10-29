@@ -1,0 +1,28 @@
+.footer-i{
+	background-color: #210b39;
+	&__h2{
+		@extend h3;
+		color: #fff;
+		text-align: center;
+	}
+}
+@media (min-width: 992px){
+	.footer-i{
+		&__h2{
+			font-size: 4rem;
+			line-height: 4.2px;
+			text-align: center;
+		}
+	}
+}
+
+@media (min-width: 1200px){
+	.footer-i{
+		padding-top: 120px;
+		&__h2{
+			font-size: 4rem;
+			line-height: 4.2px;
+			text-align: center;
+		}
+	}
+}

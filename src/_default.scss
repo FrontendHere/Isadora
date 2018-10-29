@@ -128,6 +128,18 @@ h3{
 		padding: 20px;
 	}
 }
+.section-main-i:nth-child(odd){
+	background: url(../img/bg-section-texture-tablet.jpg) no-repeat;
+	background-position: center;
+    background-size: cover;	
+    h3{
+    	color: #fff;
+    }
+    .section-main-i__col-left-p{
+    	background-color: #2d0f4c;
+    	color: #fff;
+    }
+}
 @media (min-width: 768px){
 	.section-main-i{
 		&__col-left-p{
